@@ -1,0 +1,244 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 7%;
+    color: black;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+}
+.company{
+    grid-column: span 2;
+    color: rgb(129,66,205);
+}
+.company > h1{
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 5px 5px;
+}
+.company > p{
+    display: inline-block;
+    max-width: 155px;
+    font-size: small;
+    padding: 5px 5px;
+}
+.tags > p{
+    display: inline-block;
+    color: black;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5%;
+    padding-right: 4%;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    background-color: white;
+    border: 1px solid;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: rgb(129,66,205);
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact:hover{
+    opacity: 1;
+}
+
+.testsection{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+}
+.bv{
+    background-color: rgb(129,66,205);
+    color: white;
+}
+.lt{
+    font-size: 60px;
+    margin: 0;
+}
+.test1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15% 0%;
+    
+}
+.testbtn{
+    padding: 10px 45px;
+    border-radius: 40px;
+    margin-left: 0%;
+    margin-right: 2%;
+}
+.testsection > img{
+    grid-column: span 2;
+    height: 462px;
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+.testbuttons{
+    display: flex;
+}
+.test1>p{
+    font-weight: 300;
+}
+.features>i{
+    color: rgb(129,66,205);
+    background-color: rgb(239,246,255);
+    font-size: 50px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 50px;
+    width: fit-content;
+}
+.featuresection{
+    display: flex;
+    padding: 7% 0%;
+    justify-content: space-around;
+    gap: 10%;
+}
+.features{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fl{
+    margin-top: 0px;
+    max-width: 200px;
+}
+.flowsection{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(4,auto);
+}
+.about{
+    text-align: center;
+    grid-column: span 2;
+}
+
+.about>h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about>p{
+    font-weight: 300;
+}
+.image2{
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+.p{
+    padding: 7%;
+}
+.p > h1{
+    font-size: 30px;
+    
+}
+.flowsection-btn{
+    display: flex;
+    background-color: rgb(239,246,255);
+    color: rgb(129,66,205);
+    font-size: large;
+    padding: 2%;
+    border-radius: 50px;
+    width: 150px;
+    justify-content: center;
+    gap: 10%;
+}
+
+.flowsection-btn>p{
+    display: inline-block;
+    margin: 0;
+}
+
+.flow-btn-section{
+    display: flex;
+    gap: 5%;
+    
+}
+.flowsection-btn>i{
+    height: 100%;
+}
+.flowcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15%;
+}
+.flowcontent>h1{
+    margin: 0;
+}
+
+.op{
+    opacity: 1;
+    max-width: fit-content;
+}
+.op:hover{
+    opacity: 0.7;
+}
+
+.purple-cont{
+    background-color: rgb(129,66,205);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 0% 5% 0% 5%;
+    overflow: hidden;
+}
+
+.purple-cont1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    color: white;
+}
+.purple-cont>div>h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.purple-contimage{
+    padding-top: 5%;
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    width: 500px;
+    margin-top: auto;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+footer > p{
+    font-weight: 300;
+}
+.ft>i{
+    color: rgb(129,66,205);
+    display: inline-block;
+    margin: 2% 5%;
+}
+.ft>p{
+    display: inline-block;
+}
+footer h1{
+    font-size: 50px !important;
+}
