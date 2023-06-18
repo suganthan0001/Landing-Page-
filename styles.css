@@ -2,6 +2,8 @@ body{
     font-family: 'Roboto', sans-serif;
     padding: 0 7%;
     color: black;
+    min-width: 320px;
+    max-width: 1200px;
 }
 header{
     display: grid;
@@ -22,6 +24,8 @@ header{
     font-size: small;
     padding: 5px 5px;
 }
+
+
 .tags > p{
     display: inline-block;
     color: black;
@@ -30,7 +34,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 5%;
+    gap: 7%;
     padding-right: 4%;
     align-items: center;
 }
@@ -67,7 +71,7 @@ header{
     color: white;
 }
 .lt{
-    font-size: 60px;
+    font-size: 3rem;
     margin: 0;
 }
 .test1{
@@ -78,7 +82,6 @@ header{
     
 }
 .testbtn{
-    padding: 10px 45px;
     border-radius: 40px;
     margin-left: 0%;
     margin-right: 2%;
@@ -231,14 +234,98 @@ footer{
 footer > p{
     font-weight: 300;
 }
-.ft>i{
+.ft>div>i{
     color: rgb(129,66,205);
     display: inline-block;
     margin: 2% 5%;
+    height: fit-content;
 }
-.ft>p{
-    display: inline-block;
+
+.ft>div{
+    display: flex;
+    align-items: center;
 }
 footer h1{
     font-size: 50px !important;
+}
+
+
+
+
+
+
+@media (max-width:772px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tags{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .company{
+        align-self: flex-start;
+    }
+    .testsection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .test1{
+        padding: 10% 0%;
+    }
+    .featuresection{
+        display: grid;
+        grid-template-columns: 40% 40%;
+    }
+    .features{
+        padding: 5% 0%;
+    }
+    .flowsection{
+        display: flex;
+        flex-direction: column;
+    }
+    .o1{order: 1;}
+    .o2{order: 2;}
+    .o3{order:3;}
+    .o4{order:4;}
+    .o5{order:6;}
+    footer{
+       display: flex;
+       flex-direction: column; 
+    }
+    .about > h1 {
+        font-size: 2.5em;
+    }
+    .flowsection-btn {
+        margin: 5% 0%;
+        padding: 4% 0%;
+    }
+    .flowcontent{
+        padding-left: 0;
+    }
+}
+@media(max-width:1130px){
+    .purple-cont>div>h1 {
+        font-size: 2em;
+    }
+    .purple-cont{
+        flex-direction: column;
+    }
+    .purple-cont1{
+        justify-content: space-evenly;
+        padding: 15% 5% 0% 5%;
+    }
+    .purple-contimage{
+        padding-top: 10%;
+        width: 100%;
+    }
+    .purpleimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
