@@ -267,12 +267,20 @@ footer h1{
         padding: 2%;
     }
     .company{
-        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .company>p{
+        margin: 0%;
+        text-align: center;
     }
     .testsection{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .test1{
         padding: 10% 0%;
@@ -287,6 +295,7 @@ footer h1{
     .flowsection{
         display: flex;
         flex-direction: column;
+        margin: 10% 0%;
     }
     .o1{order: 1;}
     .o2{order: 2;}
